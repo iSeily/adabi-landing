@@ -1,0 +1,38 @@
+body {
+    font-family: sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+header {
+    text-align: center;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+.tagline {
+    font-size: 1.2em;
+    color: #555;
+}
+h1 {
+    color: #2c3e50;
+}
+h2 {
+    color: #3498db;
+    margin-top: 40px;
+}
+.cta {
+    background-color: #f8f9fa;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 40px 0;
+}
+footer {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    text-align: center;
+    color: #7f8c8d;
+}
