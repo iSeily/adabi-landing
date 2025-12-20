@@ -48,6 +48,26 @@ body{
 
 .site-footer{margin-top:36px; text-align:center; color:var(--muted)}
 
+.store-badges{display:flex; gap:12px; justify-content:center; align-items:center; margin-top:14px}
+.store-badges .badge{display:inline-flex; width:160px; height:48px; align-items:center; justify-content:center; text-decoration:none}
+.store-badges .badge img,
+.store-badges .badge svg{display:block; height:auto; max-height:38px; width:auto; max-width:140px; border-radius:10px; box-shadow:0 6px 16px rgba(36,52,68,0.08); transition:transform .12s ease, box-shadow .12s ease; object-fit:contain}
+.store-badges .badge:hover img,
+.store-badges .badge:hover svg{transform:translateY(-4px); box-shadow:0 12px 26px rgba(36,52,68,0.12)}
+
+/* Ajustements spécifiques pour compenser les paddings transparents
+    et harmoniser la taille visuelle entre SVG et PNG officiels */
+.store-badges .badge img[src$="/google-play.png"],
+.store-badges .badge img[src$="google-play.png"]{max-height:44px}
+.store-badges .badge img[src$="/appstore.svg"],
+.store-badges .badge img[src$="appstore.svg"]{max-height:40px}
+
+@media (max-width:420px){
+    .store-badges{flex-direction:column; gap:10px}
+    .store-badges .badge img,
+    .store-badges .badge svg{height:54px; width:auto; max-width:100%}
+}
+
 @media (max-width:760px){
     .hero{flex-direction:column}
     .hero-art{width:100%; height:auto}
